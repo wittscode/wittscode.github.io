@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("today", () => new Date().getFullYear());
 
   return {
+    pathPrefix: "/witts-blog/",
     dir: {
       input: ".",
       includes: "_includes",
