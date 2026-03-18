@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} — witts blog</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
 <body>
   <header>
     <nav>
-      <a href="/" class="site-title">witts blog</a>
+      <a href="{{ '/' | url }}" class="site-title">witts blog</a>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="{{ '/' | url }}">Home</a></li>
+        <li><a href="{{ '/about/' | url }}">About</a></li>
       </ul>
     </nav>
   </header>
